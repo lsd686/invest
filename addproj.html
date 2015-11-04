@@ -1,40 +1,40 @@
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
-<meta charset="utf-8"/>
-<TITLE>addproj</TITLE>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <TITLE>addproj</TITLE>
 </HEAD>
 <BODY>
 <form action="addproj.js" method="post">
-<CENTER>
-<DIV STYLE="FLOAT:NONE;BORDER-STYLE:OUTSET;WIDTH:500PX;HEIGHT:500PX">
-<CENTER>
-<H2>添加项目</H2>
-<TABLE>
-<TR>
-   <TD>项目名称</TD>
-   <TD><INPUT TYPE="TEXT" name=projName  class="inputtxt" required/></TD>
-   <TD><p class="p_color"><h6>请以英文输入</h6></p></TD>
-</TR>
-<TR>
-   <TD>项目编号</TD>
-   <TD><INPUT TYPE="TEXT" name=projNo class="inputtxt" pattern="\d{2}$" required/></TD>
-   <TD><p class="p_color"><h6>请输入两位数的数</h6></p></TD>
-</TR>
-<TR>
-   <TD>备注</TD>
-   <TD><TEXTAREA TYPE="TEXT" name=note maxlength="100"/></TEXTAREA></TD>
-   <TD><p class="p_color"><h6>非必须填写字段</h6></p></TD>
-</TR>
-<TR>
-   <TD COLSPAN="2" ALIGN="RIGHT">
-       <INPUT TYPE="SUBMIT" VALUE="提交">
-   </TD>
-</TR>
-</TABLE>
-</CENTER>
-</DIV>
-</CENTER>
+    <H2>添加项目</H2>
+    <TABLE>
+        <TR>
+            <TD>项目名称</TD>
+            <TD><INPUT TYPE="TEXT" name=projName class="inputtxt" required/></TD>
+            <TD><p class="p_color"><h6>项目名称不超过20个字</h6></p></TD>
+        </TR>
+        <TR>
+            <TD>项目编号</TD>
+            <TD><INPUT TYPE="TEXT" name=projNo class="inputtxt" required/></TD>
+            <TD><p class="p_color"><h6>项目编号不超过20个字符</h6></p></TD>
+        </TR>
+        <TR>
+            <TD>当前项目单价</TD>
+            <TD><input TYPE="text" name="oringinPrice" min="0"/></TEXTAREA></TD>
+            <TD><p class="p_color"><h6>输入浮点数</h6></p></TD>
+        </TR>
+        <TR>
+            <TD>备注</TD>
+            <TD><TEXTAREA TYPE="TEXT" name=note maxlength="100"/></TEXTAREA></TD>
+            <TD><p class="p_color"><h6>非必须填写字段</h6></p></TD>
+        </TR>
+        <TR>
+            <TD COLSPAN="2" ALIGN="RIGHT">
+                <INPUT TYPE="SUBMIT" VALUE="提交">
+            </TD>
+        </TR>
+    </TABLE>
 </form>
 </BODY>
 </HTML>
